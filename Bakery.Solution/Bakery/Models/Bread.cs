@@ -5,24 +5,25 @@ namespace Bakery
   public class Bread 
   {
     public int BreadAmount {get;set;}
-    public int Price {get;set;}
+    //public int Price {get;set;}
 
-    public Bread(int breadAmount, int price)
+    public Bread(int breadAmount)
     {
-      Price = price;
+      //Price = price;
       BreadAmount = breadAmount;
     }
 
     public static int PriceCalc(int BreadAmount)
     {
+      int Price = 0;
       if (BreadAmount % 3 == 0) 
       {
-        int Price = (BreadAmount * 5) * (2/3);
-        return Price;
+        Price = (BreadAmount * 5) * (2/3);
       } else 
       {
-        return BreadAmount * 5;
+        Price = BreadAmount * 5;
       }
+      return Price;
     }
   }
 }
