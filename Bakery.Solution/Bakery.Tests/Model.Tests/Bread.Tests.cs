@@ -23,5 +23,15 @@ namespace Bakery.Tests
       int result = Bread.PriceCalc(BreadAmount);
       Assert.AreEqual(price, result);
     }
+
+    [TestMethod]
+    public void PriceCalc_ReturnPrice_Int2()
+    {
+      int BreadAmount = 21;
+      int price = 70;
+      Bread newBread = new Bread(BreadAmount);
+      int result = Bread.PriceCalc(BreadAmount);
+      Assert.AreEqual(price, result);
+    }
   }
 }
