@@ -4,9 +4,9 @@ namespace Bakery
 {
   public class Bread 
   {
-    public static Dictionary<int,int> prices = new Dictionary<int, int>()
-    {
-      {1,5}
-    };
+    public int BreadAmount {get;set;}
+    public int price {get;set;}
+    
+    
   }
 }
