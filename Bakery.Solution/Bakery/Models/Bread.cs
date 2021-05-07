@@ -29,7 +29,7 @@ namespace Bakery
       }
       else
       {
-        price = BreadAmount - freeLoaf * 5;
+        price = (BreadAmount - freeLoaf) * 5;
       } 
       return price;
     }
