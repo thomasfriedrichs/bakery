@@ -16,7 +16,7 @@ namespace Bakery
       int price = 0;
       if (BreadAmount % 3 == 0) 
       {
-        price = ((BreadAmount * 5) * (2/3m));
+        price = (int)Math.Round((BreadAmount * 5) * (2/3m));
       } else 
       {
         price = BreadAmount * 5;
