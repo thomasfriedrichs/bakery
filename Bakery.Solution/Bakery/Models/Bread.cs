@@ -20,7 +20,7 @@ namespace Bakery
         freeLoaf = BreadAmount / 3;
       } else {
         int leftOver = BreadAmount % 3;
-        freeLoaf = BreadAmount - freeLoaf;
+        freeLoaf = (BreadAmount - freeLoaf) / 3;
       }
 
 
