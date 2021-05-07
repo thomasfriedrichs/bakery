@@ -1,5 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bakery;
 
 namespace Bakery.Tests
 {
@@ -7,9 +6,11 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void PriceCalc_CalculatePrice_5()
+    public void PriceCalc_CalculatePrice_3bread10dollars()
     {
-      
+      int breadAmount = 2;
+      Bread newBread = new Bread(breadAmount);
+      int result = newBread.
     }
   }
 }
