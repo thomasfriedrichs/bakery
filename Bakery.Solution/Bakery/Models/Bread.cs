@@ -18,15 +18,18 @@ namespace Bakery
       if (BreadAmount % 3 == 0)
       {
         freeLoaf = BreadAmount / 3;
+      } else {
+        int leftOver = BreadAmount % 3;
+        freeLoaf = BreadAmount - freeLoaf;
       }
 
 
       if (BreadAmount < 2) {
         price = BreadAmount * 5;
       }
-      else if (BreadAmount > 2 && BreadAmount % 3 == 0) 
+      else
       {
-        price = (int)Math.Round((BreadAmount * 5) * (2/3m)); 
+        price = BreadAmount - freeLoaf * 5;
       } 
       return price;
     }

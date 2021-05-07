@@ -27,8 +27,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void PriceCalc_ReturnPrice_Int2()
     {
-      int BreadAmount = 21;
-      int price = 70;
+      int BreadAmount = 4;
+      int price = 15;
       Bread newBread = new Bread(BreadAmount);
       int result = Bread.PriceCalc(BreadAmount);
       Assert.AreEqual(price, result);
@@ -37,8 +37,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void PriceCalc_ReturnPrice_Int3()
     {
-      int BreadAmount = 10;
-      int price = 50;
+      int BreadAmount = 5;
+      int price = 20;
       Bread newBread = new Bread(BreadAmount);
       int result = Bread.PriceCalc(BreadAmount);
       Assert.AreEqual(price, result);
