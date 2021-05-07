@@ -31,7 +31,7 @@ namespace Bakery.Tests
       int price = 0;
       int breadAmount = 3;
       Bread newBread = new Bread(breadAmount,price);
-      int result = PriceCalc(breadAmount);
+      int result = Bread.PriceCalc(breadAmount);
       Assert.AreEqual(result, 10);
     }
   }

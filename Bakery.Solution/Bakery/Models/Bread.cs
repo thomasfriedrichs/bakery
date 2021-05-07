@@ -17,7 +17,7 @@ namespace Bakery
     {
       if (BreadAmount % 3 == 0) 
       {
-        return (BreadAmount * 5) * (2/3);
+        return Bread.Price = (BreadAmount * 5) * (2/3);
       } else 
       {
         return BreadAmount * 5;
