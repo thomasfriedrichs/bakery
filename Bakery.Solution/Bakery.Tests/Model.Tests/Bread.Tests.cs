@@ -6,11 +6,23 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void PriceCalc_CalculatePrice_3bread10dollars()
+    public void Bread_InstantiateObject_price0()
     {
-      int breadAmount = 2;
-      Bread newBread = new Bread(breadAmount);
-      int result = newBread.
+      int price = 0;
+      int breadAmount = 0;
+      Bread newBread = new Bread(breadAmount,price);
+      int result = newBread.Price;
+      Assert.AreEqual(result, 0);
+    }
+
+    [TestMethod]
+    public void Bread_InstantiateObject_bread0()
+    {
+      int price = 0;
+      int breadAmount = 0;
+      Bread newBread = new Bread(breadAmount,price);
+      int result = newBread.BreadAmount;
+      Assert.AreEqual(result, 0);
     }
   }
 }
