@@ -26,6 +26,7 @@ namespace Bakery.Tests
       Assert.AreEqual(price, result);
     }
 
+    [TestMethod]
     public void Pastry_ReturnInt_Int2()
     {
       int pastryAmount = 4;

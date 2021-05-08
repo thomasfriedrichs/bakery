@@ -19,7 +19,7 @@ namespace Bakery
       {
         price = (int)Math.Round(pastryAmount * (5/3m));
       } else {
-        price = (int)Math.Round(pastryAmount * (5/3m)) + (leftOver * 2);
+        price = (int)Math.Round((pastryAmount - leftOver) * (5/3m)) + (leftOver * 2);
       }
       return price;
     }
