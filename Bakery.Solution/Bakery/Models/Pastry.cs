@@ -15,10 +15,15 @@ namespace Bakery
     {
       int price = 0;
       int leftOver = pastryAmount % 3;
-      if (pastryAmount % 3 == 0)
+      if (pastryAmount < 3)
+      {
+        price = pastryAmount * 2;
+      }
+      else if (pastryAmount % 3 == 0)
       {
         price = (int)Math.Round(pastryAmount * (5/3m));
-      } else {
+      } else 
+      {
         price = (int)Math.Round((pastryAmount - leftOver) * (5/3m)) + (leftOver * 2);
       }
       return price;
