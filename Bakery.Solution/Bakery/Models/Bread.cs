@@ -21,7 +21,6 @@ namespace Bakery
         freeLoaf = (BreadAmount - freeLoaf) / 3;
       }
 
-
       if (BreadAmount < 2) {
         price = BreadAmount * 5;
       }
