@@ -11,7 +11,7 @@ namespace Bakery.Tests
       int breadAmount = 0;
       Bread newBread = new Bread(breadAmount);
       int result = newBread.BreadAmount;
-      Assert.AreEqual(result, 0);
+      Assert.AreEqual(breadAmount,result);
     }
 
     [TestMethod]
