@@ -19,10 +19,10 @@ namespace Bakery.Tests
     
     public void Pastry_ReturnInt_Int()
     {
-      int pastryAmount = 5;
-      int price = 9;
+      int pastryAmount = 3;
+      int price = 5;
       Pastry newPastry = new Pastry(pastryAmount);
-      int result = PriceCalc(pastryAmount);
+      int result = Pastry.PriceCalc(pastryAmount);
       Assert.AreEqual(price, result);
     }
   }
