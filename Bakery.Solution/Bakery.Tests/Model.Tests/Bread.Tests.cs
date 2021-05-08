@@ -6,7 +6,7 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void Bread_InstantiateObject_bread0()
+    public void Bread_InstantiateObject_Int()
     {
       int breadAmount = 0;
       Bread newBread = new Bread(breadAmount);
