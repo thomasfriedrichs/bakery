@@ -18,7 +18,9 @@ namespace Bakery
       if (pastryAmount % 3 == 0)
       {
         price = (int)Math.Round(pastryAmount * (5/3m));
-      } 
+      } else {
+        price = (int)Math.Round(pastryAmount * (5/3m)) + (leftOver * 2);
+      }
       return price;
     }
   }
