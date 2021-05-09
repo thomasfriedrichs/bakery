@@ -13,16 +13,15 @@ namespace Bakery
       if (Pob == "bp" || Pob == "pb")
       {
         Console.WriteLine("How many loaves of bread would you like? Enter a number");
-        string strBread = Console.ReadLine();
-        int Bread = int.Parse(strBread);
-
+        int Bread = int.Parse(Console.ReadLine());
         Console.WriteLine("How many pastries would you like?");
-        //int Pastry = int.Parse(Console.ReadLine());
+        int Pastry = int.Parse(Console.ReadLine());
         Console.WriteLine("Thank you, your order total is below!");
-        //int PastryTotal = Pastry.PriceCalc(Pastry);
+        PastryOrder newPastryOrder = new PastryOrder(Pastry);
+        int PastryTotal = PastryOrder.PriceCalc(newPastryOrder.PastryAmount);
         BreadOrder newBreadOrder = new BreadOrder(Bread);
         int BreadTotal = BreadOrder.PriceCalc(newBreadOrder.BreadAmount);
-        Console.WriteLine(BreadTotal);
+        Console.WriteLine(BreadTotal + PastryTotal);
       }
       // else if (Pob == "p")
       // {

@@ -2,11 +2,11 @@ using System;
 
 namespace Pastry.Models
 {
-  public class Pastry
+  public class PastryOrder
   {
     public int PastryAmount {get;set;}
 
-    public Pastry(int pastryAmount)
+    public PastryOrder(int pastryAmount)
     {
       PastryAmount = pastryAmount;
     }
