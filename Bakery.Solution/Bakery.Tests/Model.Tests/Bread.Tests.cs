@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Bakery.Tests
+namespace Bread.Models.Tests
 {
   [TestClass]
   public class BreadTests
@@ -9,7 +9,7 @@ namespace Bakery.Tests
     public void Bread_InstantiateObject_Int()
     {
       int breadAmount = 0;
-      Bread newBread = new Bread(breadAmount);
+      BreadOrder newBread = new BreadOrder(breadAmount);
       int result = newBread.BreadAmount;
       Assert.AreEqual(breadAmount,result);
     }
@@ -19,8 +19,8 @@ namespace Bakery.Tests
     {
       int BreadAmount = 3;
       int price = 10;
-      Bread newBread = new Bread(BreadAmount);
-      int result = Bread.PriceCalc(BreadAmount);
+      BreadOrder newBread = new BreadOrder(BreadAmount);
+      int result = BreadOrder.PriceCalc(BreadAmount);
       Assert.AreEqual(price, result);
     }
 
@@ -29,8 +29,8 @@ namespace Bakery.Tests
     {
       int BreadAmount = 4;
       int price = 15;
-      Bread newBread = new Bread(BreadAmount);
-      int result = Bread.PriceCalc(BreadAmount);
+      BreadOrder newBread = new BreadOrder(BreadAmount);
+      int result = BreadOrder.PriceCalc(BreadAmount);
       Assert.AreEqual(price, result);
     }
 
@@ -39,8 +39,8 @@ namespace Bakery.Tests
     {
       int BreadAmount = 5;
       int price = 20;
-      Bread newBread = new Bread(BreadAmount);
-      int result = Bread.PriceCalc(BreadAmount);
+      BreadOrder newBreadOrder = new BreadOrder(BreadAmount);
+      int result = BreadOrder.PriceCalc(BreadAmount);
       Assert.AreEqual(price, result);
     }
 
@@ -49,8 +49,8 @@ namespace Bakery.Tests
     {
       int BreadAmount = 7;
       int price = 25;
-      Bread newBread = new Bread(BreadAmount);
-      int result = Bread.PriceCalc(BreadAmount);
+      BreadOrder newOrder = new BreadOrder(BreadAmount);
+      int result = BreadOrder.PriceCalc(BreadAmount);
       Assert.AreEqual(price, result);
     }
 
@@ -59,8 +59,8 @@ namespace Bakery.Tests
     {
       int BreadAmount = 20;
       int price = 70;
-      Bread newBread = new Bread(BreadAmount);
-      int result = Bread.PriceCalc(BreadAmount);
+      BreadOrder newBread = new BreadOrder(BreadAmount);
+      int result = BreadOrder.PriceCalc(BreadAmount);
       Assert.AreEqual(price, result);
     }
 
@@ -69,8 +69,8 @@ namespace Bakery.Tests
     {
       int BreadAmount = 1;
       int price = 5;
-      Bread newBread = new Bread(BreadAmount);
-      int result = Bread.PriceCalc(BreadAmount);
+      BreadOrder newBread = new BreadOrder(BreadAmount);
+      int result = BreadOrder.PriceCalc(BreadAmount);
       Assert.AreEqual(price, result);
     }
   }
