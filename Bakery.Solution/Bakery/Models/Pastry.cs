@@ -1,6 +1,6 @@
 using System;
 
-namespace Bakery 
+namespace Bakery
 {
   public class Pastry
   {
