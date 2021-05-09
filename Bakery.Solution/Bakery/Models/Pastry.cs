@@ -1,6 +1,6 @@
 using System;
 
-namespace Bakery
+namespace Pastry.Models
 {
   public class Pastry
   {

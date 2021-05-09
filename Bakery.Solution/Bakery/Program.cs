@@ -1,4 +1,6 @@
 using System;
+using Pastry.Models;
+using Bread.Models;
 
 namespace Bakery
 {
@@ -11,35 +13,38 @@ namespace Bakery
       if (Pob == "bp" || Pob == "pb")
       {
         Console.WriteLine("How many loaves of bread would you like? Enter a number");
-        int Bread = int.Parse(Console.ReadLine());
+        string strBread = Console.ReadLine();
+        int Bread = int.Parse(strBread);
+
         Console.WriteLine("How many pastries would you like?");
-        int Pastry = int.Parse(Console.ReadLine());
+        //int Pastry = int.Parse(Console.ReadLine());
         Console.WriteLine("Thank you, your order total is below!");
-        int PastryTotal = Pastry.PriceCalc(Pastry);
-        int BreadTotal = Bread.PriceCalc(Bread);
-        Console.WriteLine(BreadTotal + PastryTotal);
-      }
-      else if (Pob == "p")
-      {
-        Console.WriteLine("How many pastries would you like?");
-        int Pastry = int.Parse(Console.ReadLine());
-        Console.WriteLine("Thank you, your order total is below!");
-        int PastryTotal = Pastry.PriceCalc(Pastry);
-        Console.WriteLine(PastryTotal);
-      }
-      else if (Pob == "b")
-      {
-        Console.WriteLine("How many loaves of bread would you like? Enter a number");
-        int Bread = int.Parse(Console.ReadLine());
-        Console.WriteLine("Thank you, your order total is below!");
-        int BreadTotal = Bread.PriceCalc(Bread);
+        //int PastryTotal = Pastry.PriceCalc(Pastry);
+        BreadOrder newBreadOrder = new BreadOrder(Bread);
+        int BreadTotal = BreadOrder.PriceCalc(newBreadOrder.BreadAmount);
         Console.WriteLine(BreadTotal);
-      } 
-      else 
-      {
-        Console.WriteLine("We're sorry, something went wrong. Please try again with the response 'p' and/or 'b'. Thank you!");
-        Main();
       }
+      // else if (Pob == "p")
+      // {
+      //   Console.WriteLine("How many pastries would you like?");
+      //   int Pastry = int.Parse(Console.ReadLine());
+      //   Console.WriteLine("Thank you, your order total is below!");
+      //   int PastryTotal = Pastry.PriceCalc(Pastry);
+      //   Console.WriteLine(PastryTotal);
+      // }
+      // else if (Pob == "b")
+      // {
+      //   Console.WriteLine("How many loaves of bread would you like? Enter a number");
+      //   int Bread = int.Parse(Console.ReadLine());
+      //   Console.WriteLine("Thank you, your order total is below!");
+      //   int BreadTotal = Bread.PriceCalc(Bread);
+      //   Console.WriteLine(BreadTotal);
+      // } 
+      // else 
+      // {
+      //   Console.WriteLine("We're sorry, something went wrong. Please try again with the response 'p' and/or 'b'. Thank you!");
+      //   Main();
+      // }
 
       
     }

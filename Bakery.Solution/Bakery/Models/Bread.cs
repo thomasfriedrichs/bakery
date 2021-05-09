@@ -1,26 +1,26 @@
-namespace Bakery
+namespace Bread.Models
 {
-  public class Bread 
+  public class BreadOrder 
   {
     public int BreadAmount {get;set;}
 
-    public Bread(int breadAmount)
+    public BreadOrder(int breadAmount)
     {
       BreadAmount = breadAmount;
     }
 
-    public static int PriceCalc(int BreadAmount)
+    public static int PriceCalc(int breadAmount)
     {
       int price = 0;
-      int freeLoaf = BreadAmount / 3;
-      int leftOver = BreadAmount % 3;
-      if (BreadAmount < 2)
+      int freeLoaf = breadAmount / 3;
+      int leftOver = breadAmount % 3;
+      if (breadAmount < 2)
       {
-        price = BreadAmount * 5;
+        price = breadAmount * 5;
       } 
       else 
       {
-        price = (BreadAmount - freeLoaf) * 5;
+        price = (breadAmount - freeLoaf) * 5;
       }
       return price;
     }
