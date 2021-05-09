@@ -46,8 +46,6 @@ namespace Bakery
         Console.WriteLine("We're sorry, something went wrong. Please try again with the response 'p' and/or 'b'. Thank you!");
         Main();
       }
-
-      
     }
   }
 }
